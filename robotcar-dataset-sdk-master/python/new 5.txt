@@ -1,0 +1,37 @@
+C:/Radar_project/tiny_dataset/radar-oxford-10k-partial/radar/1547131046353776.png
+
+C:\Radar_project\robotcar-dataset-sdk-master\tiny_dataset\radar-oxford-10k-partial\radar
+
+python play_radar.py dir=C:/Radar_project/tiny_dataset/radar-oxford-10k-partial/radar
+
+
+
+   # build_pointcloud
+   
+  
+C:\Radar_project\robotcar-dataset-sdk-master\tiny_dataset\radar-oxford-10k-partial\vo\vo.csv
+
+C:\Radar_project\robotcar-dataset-sdk-master\extrinsics
+
+C:\Radar_project\tiny_dataset\radar-oxford-10k-partial\lms_front
+
+
+
+python build_pointcloud.py --poses_file=C:\Radar_project\robotcar-dataset-sdk-master\tiny_dataset\radar-oxford-10k-partial\vo\vo.csv --extrinsics_dir=C:\Radar_project\robotcar-dataset-sdk-master\extrinsics --laser_dir=C:\Radar_project\tiny_dataset\radar-oxford-10k-partial\lms_front
+
+python build_pointcloud.py --laser_dir=C:/Radar_project/tiny_dataset/radar-oxford-10k-partial/lms_front --poses_file=C:/Radar_project/robotcar-dataset-sdk-master/tiny_dataset/radar-oxford-10k-partial/vo/vo.csv --extrinsics_dir=C:/Radar_project/robotcar-dataset-sdk-master/extrinsics
+
+
+python play_velodyne.py --mode=raw_interp --scale=2.0 dir=C:/Radar_project/tiny_dataset/radar-oxford-10k-partial/velodyne_left
+
+python project_laser_into_camera.py --image_dir=C:\Radar_project\tiny_dataset\radar-oxford-10k-partial\mono_left --laser_dir=C:\Radar_project\tiny_dataset\radar-oxford-10k-partial\lms_front --poses_file=C:\Radar_project\tiny_dataset\radar-oxford-10k-partial\gps\ins.csv --models_dir=C:\Radar_project\robotcar-dataset-sdk-master\models\ --extrinsics_dir=C:\Radar_project\robotcar-dataset-sdk-master\extrinsics\ --image_idx=2
+
+python project_laser_into_camera.py --image_dir=C:\Radar_project\Radar_Datasets\large_dataset\2019-01-10-14-36-48-radar-oxford-10k-partial\mono_left --laser_dir=C:\Radar_project\Radar_Datasets\large_dataset\2019-01-10-14-36-48-radar-oxford-10k-partial\lms_front --poses_file=C:\Radar_project\Radar_Datasets\large_dataset\2019-01-10-14-36-48-radar-oxford-10k-partial\vo\vo.csv --models_dir=C:\Radar_project\robotcar-dataset-sdk-master\models --extrinsics_dir=C:\Radar_project\robotcar-dataset-sdk-master\extrinsics --image_idx=8
+
+
+
+python build_pointcloud.py --poses_file=C:\Radar_project\tiny_dataset\radar-oxford-10k-partial\gps\ins.csv --extrinsics_dir=C:\Radar_project\robotcar-dataset-sdk-master\extrinsics\ --laser_dir=C:\Radar_project\tiny_dataset\radar-oxford-10k-partial\lms_front
+
+
+opencv-python                4.7.0.72
+opencv-python          			4.8.0.76
